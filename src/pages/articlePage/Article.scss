@@ -1,0 +1,152 @@
+.customCardBody {
+    max-width: 600px;
+    height: 106px;
+    border-radius: 10px;
+    background: #EBFAFF;
+    margin: 0px auto;
+    flex-shrink: 0;
+}
+
+.bloglist_comp{
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.mainActionDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ReadDiv {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Avenir, 'Vardana', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 14px;
+    color: grey;
+
+    svg path{
+        fill: grey;
+        stroke: grey;
+    }
+}
+
+.activeReadDiv
+{
+    @extend .ReadDiv;
+    color: #2EB695;
+    svg path{
+        fill: #2EB695;
+        stroke: #2EB695;
+    }
+}
+
+.actionDiv {
+    flex: 1;
+
+}
+
+.actionDivBox {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.ratingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmarkDiv {
+
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .btn:hover{
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin: 0px;
+    }
+
+    &:hover, &:focus, &:active {
+        outline: none;
+        background-color: transparent !important;
+        border: none;
+    }
+
+    .active{
+        svg path{
+            fill: #ffbc0b;
+            stroke: #ffbc0b;
+        }
+    }
+}
+
+.card-title {
+    font-family: Avenir, 'Vardana', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.card-text {
+    font-family: Avenir, 'Vardana', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tipsText {
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.rateText {
+    margin-top: 24px; 
+    
+    p {
+        font-family: Avenir, 'Vardana', sans-serif;
+        ;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #000;
+        margin-bottom: 2px;
+    }
+}
+
+
+.rateText{
+    .style-module_starRatingWrap__q-lJC {
+        svg {
+            width: 25px !important;
+            height: 25px !important;
+        }
+    }
+}
+
